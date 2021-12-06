@@ -1,6 +1,6 @@
 import React from "react";
-import { ticker } from "./api";
+import styled from "styled-components";
 
-export const Coins = () => {
-  return <div>coin page</div>;
+export const Coins = ({ coinProps }) => {
+  return <div>help me</div>;
 };
