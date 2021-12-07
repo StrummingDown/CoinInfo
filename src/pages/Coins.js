@@ -8,6 +8,7 @@ export const Coin = () => {
   let [loading, setLoading] = useState(false);
   async function fetchData() {
     let coinApii = await coinApi();
+    coinApii = coinApii.slice(0, 500);
     setCoin(coinApii);
   }
   useEffect(() => {
@@ -18,6 +19,7 @@ export const Coin = () => {
 
   return (
     <div>
+      {console.log(coinS)}
       {loading ? (
         <Loading />
       ) : (
