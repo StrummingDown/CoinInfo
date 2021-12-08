@@ -16,15 +16,15 @@ const ContentChild = styled.span`
   color: gray;
 `;
 const ContentSymbol = styled.span`
-  color: red;
+  color: orange;
 `;
 
 export const Coins = ({ coinProps }) => {
   const { name, symbol, rank } = coinProps;
   return (
     <div>
-      <Content>{name}</Content>
-      <ContentSymbol>{symbol} </ContentSymbol>
+      <Content>{name} </Content>
+      <ContentSymbol> {symbol} </ContentSymbol>
 
       <ContentChild>{rank}</ContentChild>
     </div>

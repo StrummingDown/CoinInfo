@@ -18,5 +18,5 @@ export const Price = ({ ticker }) => {
       USD: { price },
     },
   } = ticker;
-  return <CoinDiv> {`${name} ${symbol} ${price}`}</CoinDiv>;
+  return <CoinDiv> {`${name} / ${symbol} / ${price.toFixed(3)}`}</CoinDiv>;
 };
